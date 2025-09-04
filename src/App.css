@@ -1,0 +1,90 @@
+/* Custom styles for better header appearance */
+.react-app-container .slds-global-header_container {
+  position: relative;
+  z-index: 9000;
+}
+
+.react-app-container .slds-global-header {
+  background: rgb(22, 50, 92);
+  color: white;
+  padding: 0 1rem;
+  min-height: 3rem;
+}
+
+.react-app-container .slds-global-header__logo span {
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.react-app-container .slds-context-bar {
+  background: transparent;
+}
+
+.react-app-container .slds-context-bar__primary {
+  background: transparent;
+}
+
+.react-app-container .slds-context-bar__item {
+  background: transparent;
+}
+
+.react-app-container .slds-context-bar__label-action {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  display: block;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.react-app-container .slds-context-bar__label-action:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+}
+
+.react-app-container .slds-context-bar__label-action:focus {
+  outline: none;
+  box-shadow: 0 0 3px #1589ee;
+}
+.react-app-container .slds-button_icon {
+  width: auto;
+  padding: 0.5rem;
+}
+.react-app-container .slds-progress__marker .slds-assistive-text. {
+  width: 1px !important;
+  height: 1px !important;
+}
+.react-app-container .slds-assistive-text {
+  position: unset !important;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  overflow: auto !important;
+  clip: unset !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
+/* Responsive header adjustments */
+@media (max-width: 768px) {
+  .react-app-container .slds-global-header {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .react-app-container .slds-global-header__item_right {
+    margin-top: 0.5rem;
+  }
+
+  .react-app-container .slds-context-bar__primary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .react-app-container .slds-context-bar__label-action {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
